@@ -1,7 +1,15 @@
-import SortByName from './by-name.js'
+import SortByDefault from './by-default.js'
 import SortByModified from './by-modified.js'
+import SortByName from './by-name.js'
+
+const SortDirection = {
+  ASCENDING: 'asc',
+  DESCENDING: 'desc'
+};
 
 export {
-  SortByName,
+  SortByDefault,
   SortByModified,
-}
+  SortByName,
+  SortDirection
+};

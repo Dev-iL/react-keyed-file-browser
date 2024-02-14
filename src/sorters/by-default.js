@@ -1,6 +1,6 @@
 const NUMBER_GROUPS = /(-?\d*\.?\d+)/g
 
-function naturalSortComparer(a, b) {
+function SortByDefault(a, b) {
   const aa = String(a.name).split(NUMBER_GROUPS)
   const bb = String(b.name).split(NUMBER_GROUPS)
   const min = Math.min(aa.length, bb.length)
@@ -15,4 +15,4 @@ function naturalSortComparer(a, b) {
   return 0
 }
 
-export { naturalSortComparer }
+export { SortByDefault }
